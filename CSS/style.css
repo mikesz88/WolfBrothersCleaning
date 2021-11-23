@@ -1,0 +1,101 @@
+/* header banner */
+.header-background {
+    padding: 1rem 0;
+    background-color: rgba(247, 247, 247, 1);
+}
+
+.logo-banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-banner .logo-container {
+    max-width: 500px;
+}
+
+.logo-banner .logo-container .logo {
+    width: 100%;
+}
+
+.logo-banner .tele-container .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.logo-banner .tele-container .text-container > * {
+    margin: 0.25rem auto;
+}
+
+/* navbar */
+nav {
+    background-color: var(--base-blue);
+}
+
+nav .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .navbar a {
+    padding: 1rem;
+    background-color: var(--base-blue);
+    color: var(--base-yellow);
+}
+
+nav .navbar a:hover {
+    background-color: var(--base-yellow);
+    color: var(--base-blue);
+}
+
+/* menu button */
+[aria-controls="navbarDropdown"] {
+    display: none;
+}
+
+.navbar-toggler {
+    position: absolute;
+    right: var(--size-20);
+    top: var(--size-10);
+    outline: none;
+    background: transparent;
+    border: 1px solid transparent;
+    color: var(--white);
+    font-size: var(--size-20);
+    cursor: pointer;
+    pointer-events: none;
+}
+
+/* Mobile Home Anchor */
+#mobile-home {
+    display: none;
+}
+
+/* hero banner */
+.hero-bg {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-bg img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-bg .text-container {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    right: 25%;
+    bottom: 25%;
+    padding: 1rem;
+    text-align: center;
+    background-color: rgba(247, 247, 247, 0.9);
+}
