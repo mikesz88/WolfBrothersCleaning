@@ -4,6 +4,8 @@
     --base-blue: #0908ef;
     --base-dark-blue: #0404b7;
     --base-black: #101010;
+    --bg-color:  rgba(247, 247, 247, 1);
+    
 }
 
 section,
@@ -43,7 +45,7 @@ h4 {
 }
 
 p {
-    margin-top: 0;
+    margin: 0 auto;
 }
 
 button {
