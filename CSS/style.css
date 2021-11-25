@@ -48,7 +48,8 @@ nav .navbar a {
     color: var(--base-yellow);
 }
 
-nav .navbar a:hover {
+nav .navbar a:hover,
+nav .navbar a.active  {
     background-color: var(--base-yellow);
     color: var(--base-blue);
 }
@@ -120,11 +121,15 @@ nav .navbar a:hover {
 }
 
 /* Service Section */
-.service-container {
+.service-container,
+.image-gallery-bg-container,
+.footer-bg-container,
+.footer-bg-container .developer-footer-container {
     background-color: var(--bg-color);
 }
 
-.services-and-about-container h2 {
+.services-and-about-container h2,
+.image-gallery-container h2 {
     color: var(--base-blue);
     padding-top: 1rem;
 }
@@ -133,6 +138,7 @@ nav .navbar a:hover {
     padding-top: 1.25rem;
     float: right;
     margin-left: 1rem;
+    border-radius: 8px;
 }
 
 .clearfix {
@@ -144,22 +150,25 @@ nav .navbar a:hover {
 .testimonial-bg-container {
     content: '';
     background: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url('../assets/carpet-gea7057084_1920.jpg') no-repeat top center;
+    background-size: cover;
     /* opacity: 0.25; */
 }
 
-.testimonial-container > * {
+.testimonial-container > *,
+.contact-container > * {
     color: var(--bg-color);
 }
 
-.testimonial-container h2 {
+.testimonial-container h2,
+.contact-container h2 {
     padding-top: 1rem;
     margin-top: 0;
+    text-align: center;
 }
 
 .reviews {
     text-align: center;
     position: relative;
-    margin: 3rem 0;
     overflow: hidden;
 }
 
@@ -172,7 +181,7 @@ nav .navbar a:hover {
     display: flex;
     justify-content: center;
     height: 250px;
-    margin: 200px 0 50px;
+    margin: 3.125rem 0;
     pointer-events: none;
 }
 
@@ -198,7 +207,8 @@ nav .navbar a:hover {
 
 .review-item.previous,
 .review-item.next {
-    opacity: 0.25;
+    opacity: 0.50;
+    z-index: 1;
 }
 
 .review-item.previous {
@@ -223,15 +233,13 @@ nav .navbar a:hover {
 }
 
 .review-author .avatar {
-
     width: 46px;
     height: 46px;
     margin-right: 12px;
 }
 
-.avatar img {
-    width: 100%;
-    border-radius: 50%;
+.avatar i {
+    font-size: 2rem;
 }
 
 .details .name{
@@ -244,7 +252,8 @@ nav .navbar a:hover {
 }
 
 .slide-control-container {
-    margin-top: 50px;
+    padding: 1rem 0 2rem;
+    text-align: center;
 }
 
 .slide-control-container button {
@@ -267,4 +276,115 @@ nav .navbar a:hover {
 
 .slide-control-container button:nth-child(2) {
     padding-left: 10px;
+}
+
+.testimonial-container .testimonial-button,
+.image-gallery-container .example-button {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+/* image gallery section */
+/* image gallery bg is attached to service and about title */
+/* h2 is attached to service and title */
+.image-gallery-bg-container .image-gallery-container {
+    padding: 2rem 0;
+}
+
+.image-gallery-container h2 {
+    text-align: center;
+}
+
+.image-gallery-container .gallery-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gallery-container .card-container {
+    border: transparent;
+    margin: 1rem;
+    max-width: 315px;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 10px 10px gainsboro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.gallery-container .card-container .card-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.gallery-container .card-container .card-flex-container .wrapper {
+    padding: 0.5rem;
+}
+
+.gallery-container .card-container .card-flex-container .wrapper .title {
+    text-align: center;
+}
+
+.gallery-container .card-container .card-flex-container .wrapper .image-container {
+    max-width: 125px;
+}
+
+.gallery-container .card-container .card-flex-container .wrapper .image-container img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.image-gallery-container .example-button {
+    margin-top: 3rem;
+}
+
+/* contact section */
+.contact-bg-container {
+    background-color: var(--base-black);
+}
+/* h2 and color is in the testimonial section */
+.contact-container .contact-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.contact-container .contact-grid-container .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-grid-container .form-container .clean-line {
+    border: 2px solid var(--bg-color);
+    background: var(--bg-color);
+    color: var(--base-black);
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem auto;
+}
+
+.contact-grid-container .form-container input:focus,
+.contact-grid-container .form-container textarea:focus {
+    outline: none;
+}
+
+/* footer */
+
+
+
+/* footer developer */
+.footer-bg-container .developer-footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    flex-wrap: wrap;
 }

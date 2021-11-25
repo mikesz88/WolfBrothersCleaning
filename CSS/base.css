@@ -95,6 +95,13 @@ button:not(:disabled):not(.disabled) {
     border-color: var(--base-light-yellow);
 }
 
+.btn-alt,
+.btn-alt a {
+    color: var(--base-yellow);
+    background-color: var(--base-blue);
+    border-color: var(--base-light-blue);
+}
+
 .round-pill {
     border-radius: 8px;
 }
