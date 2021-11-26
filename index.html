@@ -29,7 +29,7 @@
             </div>
         </div>
     </div>
-    <nav>
+    <nav id="blue-navbar">
         <a id="mobile-home" href="#home">Home</a>
         <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown">
             &#9776; <!-- hamburger code -->
@@ -338,6 +338,9 @@
                                 required
                             ></textarea>
                         </div>
+                        <div>
+                            <input class="btn btn-primary round-pill" type="submit" value="Submit">
+                        </div>
                     </form>
                 </div>
             </div>
@@ -345,7 +348,75 @@
     </section>
     <footer class="footer-bg-container">
         <section class="footer-container container">
-            
+            <div class="google-maps-container">
+                <h3 class="header-sm">
+                    Address
+                </h3>
+                <hr>
+                <iframe 
+                    width="300" 
+                    height="300" 
+                    style="border:0" 
+                    loading="lazy" 
+                    allowfullscreen 
+                    src="https://www.google.com/maps/embed/v1/place?q=Wolf%20Brothers%20Cleaning%20%26%20Restoration%2C%2057th%20Avenue%2C%20Kenosha%2C%20WI%2C%20USA&key=AIzaSyDLOh5pctGFnwReY9h55vX1TPpn7GML-ks">
+                </iframe>
+            </div>
+            <div class="external-links">
+                <h3 class="header-sm">
+                    External Links
+                </h3>
+                <hr>
+                <ul class="sm-icons ul-defaults-none">
+                    <li>
+                        <a href="https://www.facebook.com/WOLFSBROS" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="https://www.angi.com/companylist/us/wi/kenosha/wolf-brothers-cleaning-and-restoration-reviews-7623104.htm" target="_blank" rel="noopener noreferrer">Angi</a>
+                    </li>
+                    <li>
+                        <a href="https://www.yellowpages.com/kenosha-wi/mip/wolf-brothers-cleaning-restoration-475347452/" target="_blank" rel="noopener noreferrer">Yellow Pages</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="business-hours">
+                <h3 class="header-sm">
+                    Business Hours
+                </h3>
+                <hr>
+                <table itemprop="openingHours">
+                    <tbody>
+                        <tr>
+                            <th>Mon:</th>
+                            <td><span>9:00 AM – 5:00 PM</span></td>
+                        </tr>
+                        <tr>
+                            <th>Tue:</th>
+                            <td><span>9:00 AM – 5:00 PM</span></td>
+                        </tr>
+                        <tr>
+                            <th>Wed:</th>
+                            <td><span>9:00 AM – 5:00 PM</span></td>
+                        </tr>
+                        <tr>
+                            <th>Thu:</th>
+                            <td><span>9:00 AM – 5:00 PM</span></td>
+                        </tr>
+                        <tr>
+                            <th>Fri:</th>
+                            <td><span>9:00 AM – 5:00 PM</span></td>
+                        </tr>
+                        <tr>
+                            <th>Sat:</th>
+                            <td><span>9:00 AM – 5:00 PM</span></td>
+                        </tr>
+                        <tr>
+                            <th>Sun:</th>
+                            <td><span>Closed</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
         <div class="developer-footer-container">
             <div>
@@ -361,8 +432,11 @@
         </div>
     </footer>
 
-    
+    <a id="scrollUp" href="#pageTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
 
+    
     <script src="JS/index.js"></script>
 </body>
 </html>

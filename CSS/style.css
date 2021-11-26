@@ -12,7 +12,7 @@
 }
 
 .logo-banner .logo-container {
-    max-width: 500px;
+    max-width: 480px;
 }
 
 .logo-banner .logo-container .logo {
@@ -40,6 +40,7 @@ nav .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease-in-out;
 }
 
 nav .navbar a {
@@ -54,22 +55,33 @@ nav .navbar a.active  {
     color: var(--base-blue);
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0px auto;
+    transition: ease-in-out 1s;
+    z-index: 100;
+  }
+
+
 /* menu button */
 [aria-controls="navbarDropdown"] {
     display: none;
 }
 
+
+
 .navbar-toggler {
-    position: absolute;
-    right: var(--size-20);
-    top: var(--size-10);
+    position: relative;
+    text-align: right;
     outline: none;
     background: transparent;
     border: 1px solid transparent;
-    color: var(--white);
-    font-size: var(--size-20);
+    color: var(--bg-color);
+    font-size: 20px;
     cursor: pointer;
-    pointer-events: none;
 }
 
 /* Mobile Home Anchor */
@@ -138,7 +150,7 @@ nav .navbar a.active  {
     padding-top: 1.25rem;
     float: right;
     margin-left: 1rem;
-    border-radius: 8px;
+    border-radius: 25%;
 }
 
 .clearfix {
@@ -353,6 +365,7 @@ nav .navbar a.active  {
 .contact-container .contact-grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding: 1rem 0;
 }
 
 .contact-container .contact-grid-container .form-container {
@@ -376,8 +389,18 @@ nav .navbar a.active  {
 }
 
 /* footer */
+.footer-bg-container .footer-container {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
 
-
+.footer-container div {
+    min-width: 300px;
+    padding: 1rem;
+}
 
 /* footer developer */
 .footer-bg-container .developer-footer-container {
@@ -387,4 +410,20 @@ nav .navbar a.active  {
     align-items: center;
     padding: 1rem;
     flex-wrap: wrap;
+}
+
+#scrollUp {
+    background-color: rgba(0,0,0,.1);
+    color: var(--bg-color);
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 100;
 }
