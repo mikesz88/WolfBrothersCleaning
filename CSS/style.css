@@ -329,18 +329,21 @@ nav .navbar a.active  {
     background-color: white;
 }
 
-.gallery-container .card-container .card-flex-container {
+.gallery-container .card-container .card-flex-container,
+.modal .card-container .card-flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.gallery-container .card-container .card-flex-container .wrapper {
+.gallery-container .card-container .card-flex-container .wrapper,
+.modal .card-container .card-flex-container .wrapper {
     padding: 0.5rem;
 }
 
-.gallery-container .card-container .card-flex-container .wrapper .title {
+.gallery-container .card-container .card-flex-container .wrapper .title,
+.modal .card-container .card-flex-container .wrapper .title {
     text-align: center;
 }
 
@@ -348,7 +351,20 @@ nav .navbar a.active  {
     max-width: 125px;
 }
 
-.gallery-container .card-container .card-flex-container .wrapper .image-container img {
+.modal .card-container .card-flex-container .wrapper .image-container {
+    max-width: 500px;
+}
+
+.modal i {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.gallery-container .card-container .card-flex-container .wrapper .image-container img,
+.modal .card-container .card-flex-container .wrapper .image-container img {
     width: 100%;
     border-radius: 8px;
 }
@@ -426,4 +442,58 @@ nav .navbar a.active  {
     border-radius: 50%;
     cursor: pointer;
     z-index: 100;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.8);
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    transition: all .35s ease-in;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 99;
+    overflow-y: auto;
+}
+
+.modal .card-container {
+    max-width: 800px;
+    max-height: 80vh;
+    background: var(--bg-color);
+    color: var(--base-black);
+    overflow: hidden;
+    overflow-y: auto;
+    padding: 1.25rem 1.85rem;
+    border-radius: 5px;
+    cursor: default;
+}
+
+.modal.is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+[data-animation="slideInOutTop"] .card-container {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+[data-animation="slideInOutTop"].is-visible .card-container {
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+
+[data-animation="slideInOutTop"] .card-container {
+    transform: translateY(100%);
+}
+
+[data-animation="slideInOutTop"].is-visible .card-container {
+    transform: none;
 }

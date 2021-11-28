@@ -1,4 +1,17 @@
+@media screen and (max-width: 770px) {
+    .hero-bg .text-container h1 {
+        font-size: 1rem;
+    }
+
+
+}
+
 @media screen and (max-width: 530px) {
+    
+    .hero-bg .text-container a {
+        font-size: 0.5rem;
+    }
+    
     nav {
         padding-left: 1rem;
         padding-right: 1rem;
@@ -38,6 +51,10 @@
     
     [aria-expanded="true"] ~ .navbar a {
         margin-right: 20px;
+    }
+
+    .modal .card-container .card-flex-container .wrapper .image-container {
+        max-width: 250px;
     }
 
 }
