@@ -11,6 +11,10 @@
     .hero-bg .text-container a {
         font-size: 0.5rem;
     }
+
+    .footer-container div {
+        padding: 0;
+    }
     
     nav {
         padding-left: 1rem;

@@ -157,7 +157,7 @@ const enlargeExamples = (buttonList, cardData) => {
 
 // scroll the nav bar after half the screen is scrolled
 window.onscroll = function () {
-    if (window.pageYOffset > 500) {
+    if (window.pageYOffset > 400) {
         nav.classList.add("sticky");
     } else {
         nav.classList.remove("sticky");
