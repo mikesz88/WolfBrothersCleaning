@@ -5,42 +5,42 @@ const isVisible = 'is-visible';
 
 const reviewItems = [
     {
-        reviewText: '#1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
-        author: 'First Last',
-        company: 'Company 1'
+        reviewText: 'These guys are on Point! Straight forward, honest and upfront about the circumstances. Helpful across the board and went out of his way to help us out during our emergency. Easiest business I\'done in a long time. 5 stars and then some :) THANK YOU!',
+        author: 'Reef D',
+        company: ''
     },
     {
-        reviewText: '#2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
-        author: 'First Last',
-        company: 'Company 2'
+        reviewText: 'Great experience, extremely professional! Highly recommend Wolf Brothers!',
+        author: 'Ben M',
+        company: ''
     },
     {
-        reviewText: '#3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
-        author: 'First Last',
-        company: 'Company 3'
+        reviewText: 'This guy is fantastic. Comes in and does a great job everytime. We have used him several times.',
+        author: 'Justice S',
+        company: ''
     },
-    {
-        reviewText: '#4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
-        author: 'First Last',
-        company: 'Company 4'
-    }
+    // {
+    //     reviewText: '#4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
+    //     author: 'First Last',
+    //     company: ''
+    // }
 ];
 
 const testimonialItems = [
     {
-        companyName: 'company1',
-        beforePic: 'https://picsum.photos/300',
-        afterPic: 'https://picsum.photos/300'
+        companyName: 'fridgeExample',
+        beforePic: '../assets/PhotoGallery/dirtyFridge.jpg',
+        afterPic: '../assets/PhotoGallery/cleanFridge.jpg'
     },
     {
-        companyName: 'company2',
-        beforePic: 'https://picsum.photos/300',
-        afterPic: 'https://picsum.photos/300'
+        companyName: 'showerExample',
+        beforePic: '../assets/PhotoGallery/dirtyShower.jpg',
+        afterPic: '../assets/PhotoGallery/cleanShower.jpg'
     },
     {
-        companyName: 'company3',
-        beforePic: 'https://picsum.photos/300',
-        afterPic: 'https://picsum.photos/300'
+        companyName: 'carpetExample',
+        beforePic: '../assets/PhotoGallery/carpetShowingDifference6.jpg',
+        afterPic: '../assets/PhotoGallery/cleanCarpet.jpg'
     }
 ]
 
@@ -82,13 +82,13 @@ const createTestimonialCards = (cardData) => {
             <div class="wrapper">
                 <h3 class="title">Before</h3>
                 <div class="image-container">
-                    <img src=${item.beforePic} alt="before work image">
+                    <img class="thumbnailSize" src=${item.beforePic} alt="before work image">
                 </div>
             </div>                    
             <div class="wrapper">
                 <h3 class="title">After</h3>
                 <div class="image-container">
-                    <img src=${item.afterPic} alt="after work image">
+                    <img class="thumbnailSize" src=${item.afterPic} alt="after work image">
                 </div>
             </div>
         </div>

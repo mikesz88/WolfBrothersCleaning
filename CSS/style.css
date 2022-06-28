@@ -359,6 +359,10 @@ nav .navbar a.active  {
     max-width: 125px;
 }
 
+.gallery-container .card-container .card-flex-container .wrapper .image-container img {
+    height: 150px;
+}
+
 .modal .card-container .card-flex-container .wrapper .image-container {
     max-width: 500px;
 }
@@ -391,6 +395,11 @@ nav .navbar a.active  {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding: 1rem 0;
+}
+
+.contact-container .contact-grid-container .caption {
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .contact-container .contact-grid-container .form-container {
@@ -524,6 +533,13 @@ nav .navbar a.active  {
 .services-and-about-container.service-page h2 {
     text-align: center;
 }
+
+/* photo gallery */
+.photo-margin .photos-image-container img {
+    height: 300px;
+    width: 300px;
+}
+
 
 /* contact page */
 .contact-page-container.form-container {
