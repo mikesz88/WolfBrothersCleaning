@@ -29,18 +29,18 @@ const reviewItems = [
 const testimonialItems = [
     {
         companyName: 'fridgeExample',
-        beforePic: 'assets/PhotoGallery/dirtyFridge.jpg',
-        afterPic: 'assets/PhotoGallery/cleanFridge.jpg'
+        beforePic: './assets/PhotoGallery/dirtyFridge.jpg',
+        afterPic: './assets/PhotoGallery/cleanFridge.jpg'
     },
     {
         companyName: 'showerExample',
-        beforePic: 'assets/PhotoGallery/dirtyShower.jpg',
-        afterPic: 'assets/PhotoGallery/cleanShower.jpg'
+        beforePic: './assets/PhotoGallery/dirtyShower.jpg',
+        afterPic: './assets/PhotoGallery/cleanShower.jpg'
     },
     {
         companyName: 'carpetExample',
-        beforePic: 'assets/PhotoGallery/carpetShowingDifference6.jpg',
-        afterPic: 'assets/PhotoGallery/cleanCarpet.jpg'
+        beforePic: './assets/PhotoGallery/carpetShowingDifference6.jpg',
+        afterPic: './assets/PhotoGallery/cleanCarpet.jpg'
     }
 ]
 
