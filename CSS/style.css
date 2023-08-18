@@ -413,7 +413,7 @@ nav .navbar a.active {
 }
 
 .contact-container .contact-grid-container .caption {
-  text-align: justify;
+  /* text-align: justify; */
   text-justify: inter-word;
 }
 
@@ -596,4 +596,3 @@ nav .navbar a.active {
 [data-animation='slideInOutTop'].is-visible .card-container {
   transform: none;
 }
-
