@@ -133,11 +133,11 @@
                                 <label for="telephone">Phone (Optional)</label>
                             </div>
                             <input class="clean-line" type="tel" id="telephone" size="3" maxlength="3" max="3"
-                                placeholder="555" name="telephone">-
+                                placeholder="555" name="telephone1">-
                             <input class="clean-line" type="tel" id="telephone" size="3" maxlength="3" max="3"
-                                placeholder="555" name="telephone">-
+                                placeholder="555" name="telephone2">-
                             <input class="clean-line" type="tel" id="telephone" size="4" maxlength="4" max="4"
-                                placeholder="5555" name="telephone">
+                                placeholder="5555" name="telephone3">
                         </div>
                         <div>
                             <div>
@@ -242,6 +242,17 @@
 
 
     <script src="JS/index.js"></script>
+    <script>
+        grecaptcha.ready(function () {
+          grecaptcha
+            .execute('6LfXkLknAAAAAJf5aKIptukLaJMyEWC3jIxKbRd2', {
+              action: 'contact',
+            })
+            .then(function (token) {
+              document.getElementById('captchaResponse').value = token;
+            });
+        });
+      </script>
 </body>
 
 </html>

@@ -20,6 +20,7 @@
       src="https://kit.fontawesome.com/1175a7f98e.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfXkLknAAAAAJf5aKIptukLaJMyEWC3jIxKbRd2"></script>
   </head>
   <body>
     <div id="pageTop"></div>
@@ -237,6 +238,17 @@
       </div>
     </footer>
     <script src="JS/index.js"></script>
+    <script>
+      grecaptcha.ready(function () {
+        grecaptcha
+          .execute('6LfXkLknAAAAAJf5aKIptukLaJMyEWC3jIxKbRd2', {
+            action: 'contact',
+          })
+          .then(function (token) {
+            document.getElementById('captchaResponse').value = token;
+          });
+      });
+    </script>
   </body>
 </html>
 
